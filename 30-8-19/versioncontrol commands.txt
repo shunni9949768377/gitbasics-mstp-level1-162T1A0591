@@ -1,0 +1,136 @@
+R&D@kvsw MINGW64 ~
+$ cd -
+bash: cd: OLDPWD not set
+
+R&D@kvsw MINGW64 ~
+$ pwd
+/c/Users/R&D
+
+R&D@kvsw MINGW64 ~
+$ cd ..
+
+R&D@kvsw MINGW64 /c/Users
+$ cd desktop
+bash: cd: desktop: No such file or directory
+
+R&D@kvsw MINGW64 /c/Users
+$ cd -
+/c/Users/R&D
+
+R&D@kvsw MINGW64 ~
+$ cd desktop
+
+R&D@kvsw MINGW64 ~/desktop
+$ git init
+Initialized empty Git repository in C:/Users/R&D/Desktop/.git/
+
+R&D@kvsw MINGW64 ~/desktop (master)
+$ git -a
+unknown option: -a
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+R&D@kvsw MINGW64 ~/desktop (master)
+$ ls
+ 591/         'Git-2.23.0-64-bit (1).exe'*  'raptor practice files'/
+ anjum/        gitbasics/                    versioncontrol/
+ desktop.ini   github/
+ file.txt     'linux commands'/
+
+R&D@kvsw MINGW64 ~/desktop (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        591/
+        Git-2.23.0-64-bit (1).exe
+        anjum/
+        desktop.ini
+        file.txt
+        gitbasics/
+        github/
+        linux commands/
+        raptor practice files/
+        versioncontrol/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+R&D@kvsw MINGW64 ~/desktop (master)
+$ cd versioncontrol
+
+R&D@kvsw MINGW64 ~/desktop/versioncontrol (master)
+$ ls
+workflow-of-version-control.pdf
+
+R&D@kvsw MINGW64 ~/desktop/versioncontrol (master)
+$ git init
+Initialized empty Git repository in C:/Users/R&D/Desktop/versioncontrol/.git/
+
+R&D@kvsw MINGW64 ~/desktop/versioncontrol (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        workflow-of-version-control.pdf
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+R&D@kvsw MINGW64 ~/desktop/versioncontrol (master)
+$ git config user.name "shunni9949768377"
+
+R&D@kvsw MINGW64 ~/desktop/versioncontrol (master)
+$ git config user.email "shaikanjum591@gmail.com"
+
+R&D@kvsw MINGW64 ~/desktop/versioncontrol (master)
+$ git remote add versioncontrol https://github.com/shunni9949768377/versioncontrol
+
+R&D@kvsw MINGW64 ~/desktop/versioncontrol (master)
+$ git commit -m "checking"
+On branch master
+
+Initial commit
+
+Untracked files:
+        workflow-of-version-control.pdf
+
+nothing added to commit but untracked files present
+
+R&D@kvsw MINGW64 ~/desktop/versioncontrol (master)
+$ git add workflow-of-version-control.pdf
+
+R&D@kvsw MINGW64 ~/desktop/versioncontrol (master)
+$ git commit -m "checking"
+[master (root-commit) 1c15528] checking
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 workflow-of-version-control.pdf
+
+R&D@kvsw MINGW64 ~/desktop/versioncontrol (master)
+$ git push -u versioncontrol master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 539.90 KiB | 9.64 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/shunni9949768377/versioncontrol
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'versioncontrol'.
+
+R&D@kvsw MINGW64 ~/desktop/versioncontrol (master)
+$ git status
+On branch master
+Your branch is up to date with 'versioncontrol/master'.
+
+nothing to commit, working tree clean
+
+R&D@kvsw MINGW64 ~/desktop/versioncontrol (master)
+$
